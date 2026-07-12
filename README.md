@@ -1,68 +1,76 @@
 # 🤖 AI Resume Screening System
 
-An AI-powered Resume Screening System that helps recruiters automatically evaluate and rank resumes based on a given Job Description. The application leverages Natural Language Processing (NLP), TF-IDF Vectorization, and Cosine Similarity to identify the most relevant candidates through an interactive Streamlit dashboard.
+An AI-powered Resume Screening System that helps recruiters evaluate and rank resumes against a given Job Description using Natural Language Processing (NLP) and Machine Learning techniques.
 
 ---
 
-## 🚀 Features
+## 🚀 Live Demo
 
-- 📄 Resume Screening using NLP
-- 📋 Job Description Analysis
-- 🧹 Resume Text Preprocessing
-- 📊 TF-IDF Feature Engineering
-- 📈 Cosine Similarity Matching
-- ⭐ Recommendation Engine
-- 📊 Recruiter Analytics Dashboard
-- 🏆 Top Candidate Identification
-- 📉 Resume Ranking
-- 🎨 Interactive Streamlit UI
-- 🌑 Modern Dark Theme Dashboard
+🔗 https://ai-resume-screening-system-nwyzmvvj2dnwftpvsqkdau.streamlit.app
+
+---
+
+## 📌 Features
+
+- 📄 Resume Screening based on Job Description
+- 🧠 NLP Text Preprocessing
+- 📊 TF-IDF Vectorization
+- 🎯 Cosine Similarity Matching
+- ⭐ AI Recommendation Engine
+- 📈 Recruiter Analytics Dashboard
+- 📊 Resume Ranking Visualization
+- 🌙 Modern Dark-Themed Streamlit UI
+- ☁️ Deployed on Streamlit Community Cloud
 
 ---
 
 ## 🛠️ Tech Stack
 
+### Programming Language
 - Python
+
+### Libraries
 - Streamlit
 - Pandas
 - NumPy
 - Scikit-learn
 - NLTK
-- TF-IDF Vectorizer
+
+### Machine Learning & NLP
+- TF-IDF Vectorization
 - Cosine Similarity
+- Text Preprocessing
+- Stopword Removal
+- Lemmatization
+
+### Deployment
+- Streamlit Community Cloud
+
+### Version Control
+- Git
+- GitHub
 
 ---
 
 ## 📂 Project Structure
 
-```text
+```
 Resume-Screening-System
-│
-├── .streamlit
-│   └── config.toml
 │
 ├── app
 │   ├── app.py
 │   ├── styles.py
 │   └── ui.py
 │
-├── assets
-│
 ├── datasets
 │   └── resume_dataset.csv
-│
-├── models
 │
 ├── notebooks
 │   └── Resume_Screening.ipynb
 │
 ├── outputs
 │   ├── resume_ranking.csv
-│   └── Streamlit App - AI-Resume-Screening-System
-│       ├── initial dashboard.png
-│       ├── Result Generated (1).png
-│       ├── Result Generated (2).png
-│       └── Result Generated (3).png
+│   └── Streamlit App Screenshots
 │
 ├── utils
 │   ├── data_loader.py
@@ -73,35 +81,36 @@ Resume-Screening-System
 │   ├── text_preprocessing.py
 │   └── __init__.py
 │
-├── test.py
+├── .streamlit
+│   └── config.toml
+│
 ├── requirements.txt
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
 ---
 
 ## ⚙️ Installation
 
-### Clone the Repository
+Clone the repository
 
 ```bash
 git clone https://github.com/trupthinazre/AI-Resume-Screening-System.git
 ```
 
-### Navigate to the Project Directory
+Go to the project directory
 
 ```bash
 cd AI-Resume-Screening-System
 ```
 
-### Install Required Libraries
+Install the required packages
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the Application
+Run the application
 
 ```bash
 streamlit run app/app.py
@@ -109,54 +118,48 @@ streamlit run app/app.py
 
 ---
 
-## 📊 Workflow
+## 📊 How It Works
 
 1. Enter a Job Description.
-2. Click **Analyze Resumes**.
-3. The system preprocesses resumes and the job description using NLP.
-4. TF-IDF converts textual data into numerical vectors.
-5. Cosine Similarity calculates the similarity score between resumes and the job description.
-6. Resumes are ranked according to their match score.
-7. Recruiter Analytics and AI-based recommendations are displayed.
+2. The system preprocesses the text using NLP.
+3. All resumes are converted into TF-IDF vectors.
+4. Cosine Similarity is calculated between the Job Description and each resume.
+5. Resumes are ranked based on similarity score.
+6. Recommendations are generated based on match percentage.
+7. The recruiter dashboard displays rankings, analytics, and visualizations.
 
 ---
 
-## 📸 Application Screenshots
+## 📸 Screenshots
 
-### Initial Dashboard
+### Dashboard
 
-![Dashboard](outputs/Streamlit%20App%20-%20AI-Resume-Screening-System/initial%20dashboard.png)
+- Modern Dark Theme UI
+- Interactive Recruiter Dashboard
+- Resume Ranking Table
+- Match Score Analytics
+- Recommendation Engine
 
-### Analysis Result
-
-![Result 1](outputs/Streamlit%20App%20-%20AI-Resume-Screening-System/Result%20Generated%20(1).png)
-
-### Recruiter Analytics
-
-![Result 2](outputs/Streamlit%20App%20-%20AI-Resume-Screening-System/Result%20Generated%20(2).png)
-
-### Resume Ranking
-
-![Result 3](outputs/Streamlit%20App%20-%20AI-Resume-Screening-System/Result%20Generated%20(3).png)
+Screenshots are available in the **outputs** folder.
 
 ---
 
-## 📈 Future Enhancements
+## 🎯 Future Enhancements
 
-- Resume Upload (PDF/DOCX)
-- Advanced Skill Extraction
+- Resume PDF Upload
+- Multiple Resume Upload
 - Skill Gap Analysis
-- Interactive Plotly Visualizations
-- PDF & CSV Report Export
-- AI-based Resume Suggestions
-- Multiple Job Description Comparison
-- Deep Learning-Based Resume Matching
+- Resume Parsing
+- AI Interview Question Generation
+- Download Results as Excel/PDF
+- Candidate Skill Visualization
+- LLM Integration (OpenAI/Gemini)
 
 ---
 
 ## Author
 
-**Trupthi Nazre**
+**Trupthi Nazre K**
 
 - GitHub: https://github.com/trupthinazre
 - LinkedIn: https://www.linkedin.com/in/trupthi-nazre-k-289567327/
